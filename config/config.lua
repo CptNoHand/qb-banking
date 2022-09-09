@@ -3,10 +3,7 @@ Config = {}
 Config.cardTypes = { "visa", "mastercard"}
 
 Config.Blip = {
-    blipName = "Bank",
-    blipType = 108,
-    blipColor = 2,
-    blipScale = 0.55
+    
 }
 
 Config.ATMModels = {
@@ -23,6 +20,8 @@ Config.BankLocations = {
     vector3(-1213.0, -330.39, 37.79),
     vector3(-2962.71, 483.0, 15.7),
     vector3(1175.07, 2706.41, 38.09),
-    vector3(246.64, 223.20, 106.29),
-    vector3(-113.22, 6470.03, 31.63)
+    vector3(258.12, 226.69, 106.28),
+    vector3(-113.22, 6470.03, 31.63),
+    vector3(254.59, 217.05, 106.28),
+    vector3(262.85, 224.9, 106.28),
 }

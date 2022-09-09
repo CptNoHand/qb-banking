@@ -20,27 +20,6 @@ local function DrawText3Ds(x, y, z, text)
     ClearDrawOrigin()
 end
 
-local function createBlips()
-    for k, v in pairs(Config.BankLocations) do
-        blips[k] = AddBlipForCoord(tonumber(v.x), tonumber(v.y), tonumber(v.z))
-        SetBlipSprite(blips[k], Config.Blip.blipType)
-        SetBlipDisplay(blips[k], 4)
-        SetBlipScale  (blips[k], Config.Blip.blipScale)
-        SetBlipColour (blips[k], Config.Blip.blipColor)
-        SetBlipAsShortRange(blips[k], true)
-        BeginTextCommandSetBlipName("STRING")
-        AddTextComponentString(tostring(Config.Blip.blipName))
-        EndTextCommandSetBlipName(blips[k])
-    end
-end
-
-local function removeBlips()
-    for k, v in pairs(Config.BankLocations) do
-        RemoveBlip(blips[k])
-    end
-    blips = {}
-end
-
 local function openAccountScreen()
     QBCore.Functions.TriggerCallback('qb-banking:getBankingInformation', function(banking)
         if banking ~= nil then
