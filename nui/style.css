@@ -13,7 +13,7 @@ body {
     background: radial-gradient(circle, rgba(0, 71, 99, 0.801) 0%, rgba(0,0,0,1) 90%);
     
     min-height: 800px;
-    max-height: 800px;
+    max-height: 810px;
     display: none;
 }
 
