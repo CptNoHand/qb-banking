@@ -4,7 +4,7 @@ Config.cardTypes = { "visa", "mastercard"}
 
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
 Config.Zones = {
-        [1] = {
+    --[[[1] = {
         position = vector3(149.05, -1041.3, 29.37),
         length = 6.2, width = 2.0, heading = 250,
         minZ = 27.17, maxZ = 31.17
@@ -43,14 +43,7 @@ Config.Zones = {
         position = vector3(-111.98, 6470.56, 31.63),
         length = 6.6, width = 2.0, heading = 45,
         minZ = 29.43, maxZ = 33.43
-    }
-}
-
-Config.Blip = {
-    blipName = Lang:t('info.bank_blip'),
-    blipType = 108,
-    blipColor = 2,
-    blipScale = 0.55
+    }]]--
 }
 
 Config.ATMModels = {
@@ -61,7 +54,7 @@ Config.ATMModels = {
 }
 
 Config.BankLocations = {
-    vector3(149.9, -1040.46, 29.37),
+    --[[vector3(149.9, -1040.46, 29.37),
     vector3(314.23, -278.83, 54.17),
     vector3(-350.8, -49.57, 49.04),
     vector3(-1213.0, -330.39, 37.79),
@@ -70,5 +63,5 @@ Config.BankLocations = {
     vector3(258.12, 226.69, 106.28),
     vector3(-113.22, 6470.03, 31.63),
     vector3(254.59, 217.05, 106.28),
-    vector3(262.85, 224.9, 106.28),
+    vector3(262.85, 224.9, 106.28),]]--
 }
